@@ -1,14 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { Home, Calendar, Activity, MessageCircle, Bell } from "lucide-react";
-
 const Layout = ({ children }) => {
   const navigation = [
     { name: "Inicio", path: "/", icon: Home },
-    { name: "Calendario", path: "/", icon: Calendar },
-    { name: "Ejercicios", path: "/", icon: Activity },
-    { name: "Chat con Doctores", path: "/", icon: MessageCircle },
-    { name: "Notificaciones", path: "/", icon: Bell },
+    // { name: "Calendario", path: "/calendario", icon: Calendar },
+    // { name: "Ejercicios", path: "/ejercicios", icon: Activity },
+    // { name: "Chat con Doctores", path: "/chat", icon: MessageCircle },
+    // { name: "Notificaciones", path: "/notificaciones", icon: Bell },
   ];
 
   return (
