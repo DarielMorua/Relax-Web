@@ -1,16 +1,74 @@
+import { AuthProvider } from "./components/AuthContext";
 import { Routes, Route } from "react-router-dom";
 import Layout from "./components/Layout.jsx";
+import ProtectedRoute from "./Auth/ProtectedRoute";
 import Home from "./pages/Home.jsx";
-
+import Login from "./pages/Login.jsx";
 function App() {
   return (
-    <Layout>
+    <AuthProvider>
       <Routes>
-        <Route path="/" element={<Home />} />
-        {/* <Route path="/calendario" element={<Calendario />} /> 
-        <Route path="/ejercicios" element={<Ejercicios />} />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/notificaciones" element={<Notificaciones />} /> */}
+        {/* Ruta pública */}
+        <Route path="/login" element={<Login />} />
+
+        {/* Rutas protegidas */}
+        <Route
+          path="/"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Home />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+
+        {/* Más rutas protegidas */}
+        {/* <Route
+          path="/calendario"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Calendario />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path="/ejercicios"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Ejercicios />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path="/chat"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Chat />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+        
+        <Route
+          path="/notificaciones"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Notificaciones />
+              </Layout>
+            </ProtectedRoute>
+          }
+        /> */}
+
+        {/* 404 */}
         <Route
           path="*"
           element={
@@ -25,7 +83,7 @@ function App() {
           }
         />
       </Routes>
-    </Layout>
+    </AuthProvider>
   );
 }
 

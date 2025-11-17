@@ -1,6 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Home, Calendar, Activity, MessageCircle, Bell } from "lucide-react";
+import { useAuth } from "./AuthContext";
 const Layout = ({ children }) => {
   const navigation = [
     { name: "Inicio", path: "/", icon: Home },
@@ -9,6 +10,14 @@ const Layout = ({ children }) => {
     // { name: "Chat con Doctores", path: "/chat", icon: MessageCircle },
     // { name: "Notificaciones", path: "/notificaciones", icon: Bell },
   ];
+
+  const { user, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogout = () => {
+    logout();
+    navigate("/login");
+  };
 
   return (
     <div className="flex h-screen bg-gray-50">
@@ -67,14 +76,17 @@ const Layout = ({ children }) => {
             </div>
             <div className="flex-1 min-w-0">
               <p className="text-sm font-medium text-gray-900 truncate">
-                Usuario
+                {user?.name || "Usuario"}
               </p>
               <p className="text-xs text-gray-500 truncate">
-                usuario@email.com
+                {user?.email || "usuario@email.com"}
               </p>
             </div>
           </div>
-          <button className="w-full px-3 py-2 text-xs font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors text-left">
+          <button
+            onClick={handleLogout}
+            className="w-full px-3 py-2 text-xs font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50 rounded-lg transition-colors text-left"
+          >
             Cerrar Sesión
           </button>
         </div>
