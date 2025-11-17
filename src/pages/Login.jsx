@@ -30,7 +30,7 @@ function Login() {
 
   return (
     <div className="flex min-h-screen bg-[#d9eced]">
-      {/* Left Panel - Form */}
+      {/* Panel izquierda */}
       <div
         className="flex flex-col justify-center w-full lg:w-1/2 px-6 py-12 lg:px-16 xl:px-24 relative"
         style={{
@@ -39,11 +39,11 @@ function Login() {
           backgroundPosition: "center",
         }}
       >
-        {/* Overlay for better text readability */}
+        {/* Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-[#1a5f61]/85 via-[#2d7a7c]/90 to-[#0f3d3e]/95"></div>
 
         <div className="w-full max-w-md mx-auto relative z-10">
-          {/* Logo and Title */}
+          {/* Logo */}
           <div className="mb-8">
             <div className="flex items-center space-x-3 mb-6">
               <h1 className="text-xl font-bold text-white">RelaxApp</h1>
@@ -62,7 +62,7 @@ function Login() {
 
           {/* Form */}
           <form onSubmit={handleSubmit} className="space-y-5">
-            {/* Email Input */}
+            {/* Email  */}
             <div>
               <label
                 htmlFor="email"
@@ -81,7 +81,7 @@ function Login() {
               />
             </div>
 
-            {/* Password Input */}
+            {/* Password  */}
             <div>
               <label
                 htmlFor="password"
@@ -100,7 +100,7 @@ function Login() {
               />
             </div>
 
-            {/* Remember Me and Forgot Password */}
+            {/* Recordar Recuperar Contraseña */}
             <div className="flex items-center justify-between">
               <div className="flex items-center">
                 <input
@@ -122,14 +122,14 @@ function Login() {
               </a>
             </div>
 
-            {/* Error Message */}
+            {/* Error  */}
             {error && (
               <div className="p-3 bg-red-900/50 border border-red-700 rounded-lg text-red-200 text-sm">
                 {error}
               </div>
             )}
 
-            {/* Submit Button */}
+            {/* Enviar */}
             <button
               type="submit"
               className="w-full px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800"
@@ -140,7 +140,7 @@ function Login() {
         </div>
       </div>
 
-      {/* Right Panel - Illustration */}
+      {/* Panel derecha */}
       <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-[#e8f5f5] via-[#d9eced] to-[#c2e0e3] items-center justify-center p-12">
         <div className="max-w-lg text-center">
           <img

@@ -5,6 +5,7 @@ import { useAuth } from "./AuthContext";
 const Layout = ({ children }) => {
   const navigation = [
     { name: "Inicio", path: "/", icon: Home },
+    { name: "Ejercicios", path: "/ejercicios", icon: Activity },
     // { name: "Calendario", path: "/calendario", icon: Calendar },
     // { name: "Ejercicios", path: "/ejercicios", icon: Activity },
     // { name: "Chat con Doctores", path: "/chat", icon: MessageCircle },
@@ -23,7 +24,7 @@ const Layout = ({ children }) => {
     <div className="flex h-screen bg-gray-50">
       {/* Sidebar */}
       <aside className="w-64 bg-white border-r border-gray-200 flex flex-col">
-        {/* Logo Section */}
+        {/* Logo */}
         <div className="p-6 border-b border-gray-100">
           <div className="flex items-center space-x-3">
             <div>
@@ -33,7 +34,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
 
-        {/* Navigation */}
+        {/* Navegacion */}
         <nav className="flex-1 px-4 py-6">
           <p className="px-3 mb-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">
             Navegación
@@ -92,7 +93,7 @@ const Layout = ({ children }) => {
         </div>
       </aside>
 
-      {/* Main Content Area */}
+      {/* Main Content */}
       <main className="flex-1 overflow-y-auto bg-gray-50">
         <div className="p-8">{children}</div>
       </main>
