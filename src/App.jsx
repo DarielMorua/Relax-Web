@@ -5,6 +5,9 @@ import ProtectedRoute from "./Auth/ProtectedRoute";
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
 import Calendario from "./pages/Calendario.jsx";
+import Exercises from "./pages/Exercises.jsx";
+import ExerciseDetail from "./components/ExerciseDetail.jsx";
+
 function App() {
   return (
     <AuthProvider>
@@ -36,16 +39,7 @@ function App() {
           }
         />
         
-        {/* <Route
-          path="/ejercicios"
-          element={
-            <ProtectedRoute>
-              <Layout>
-                <Ejercicios />
-              </Layout>
-            </ProtectedRoute>
-          }
-        />
+       
         
         <Route
           path="/chat"
@@ -68,6 +62,29 @@ function App() {
             </ProtectedRoute>
           }
         /> */}
+
+        {/* Ejercicios */}
+        <Route
+          path="/ejercicios"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <Exercises />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
+
+        <Route
+          path="/ejercicios/:id"
+          element={
+            <ProtectedRoute>
+              <Layout>
+                <ExerciseDetail />
+              </Layout>
+            </ProtectedRoute>
+          }
+        />
 
         {/* 404 */}
         <Route
