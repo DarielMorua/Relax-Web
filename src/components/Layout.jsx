@@ -6,7 +6,7 @@ const Layout = ({ children }) => {
   const navigation = [
     { name: "Inicio", path: "/", icon: Home },
     { name: "Calendario", path: "/calendario", icon: Calendar },
-    // { name: "Ejercicios", path: "/ejercicios", icon: Activity },
+    { name: "Ejercicios", path: "/ejercicios", icon: Activity },
     // { name: "Chat con Doctores", path: "/chat", icon: MessageCircle },
     // { name: "Notificaciones", path: "/notificaciones", icon: Bell },
   ];
