@@ -22,6 +22,7 @@ function Home() {
             name={exercise.name}
             description={exercise.description}
             image={exercise.image}
+            id={exercise.id}
           />
         ))}
       </div>
