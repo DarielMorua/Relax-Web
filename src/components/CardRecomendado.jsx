@@ -1,14 +1,11 @@
-import chivas from '../assets/chivas.png';
-import patricio from '../assets/patricio.png';  
-
-function CardRecomendado() {
-    return (
-        <div className="card-recomendados">
-            <img src={patricio} alt="Patricio" />
-            <h2>Ejercicio 1</h2>
-            <p>Ejercicio chido xd</p>
-        </div>
-    );
+function CardRecomendado({ name, description, image }) {
+  return (
+    <div className="card-recomendados">
+      <img src={image} alt={name} />
+      <h2>{name}</h2>
+      <p>{description}</p>
+    </div>
+  );
 }
 
 export default CardRecomendado;

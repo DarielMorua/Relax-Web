@@ -18,8 +18,12 @@ const ExerciseCard = ({ exercise }) => {
 
       {/* Icono circular */}
       <div className="flex justify-center mb-4">
-        <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center">
-          <span className="text-3xl">{exercise.image}</span>
+        <div className="w-25 h-25 bg-cyan-100 rounded-full flex items-center justify-center">
+          <img
+            className="w-20 h-20  rounded-full"
+            src={exercise.image}
+            alt={exercise.name}
+          />
         </div>
       </div>
 

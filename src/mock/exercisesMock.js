@@ -2,7 +2,7 @@ export const exercises = [
   {
     id: 1,
     name: "Respiración Diafragmática",
-    image: "🫁",
+    image: "https://placehold.net/default.png",
     time: 5,
     description: "Técnica para respirar usando el diafragma",
     category: "Respiración",
@@ -18,7 +18,7 @@ export const exercises = [
   {
     id: 2,
     name: "Respiración Alterna",
-    image: "🫁",
+    image: "https://placehold.net/default.png",
     time: 7,
     description: "Respiración alternando las fosas nasales",
     category: "Respiración",
@@ -36,7 +36,7 @@ export const exercises = [
   {
     id: 3,
     name: "Meditación en Silencio",
-    image: "🧘",
+    image: "https://placehold.net/default.png",
     time: 10,
     description: "Practica la meditación sin estímulos externos",
     category: "Meditación",
@@ -53,7 +53,7 @@ export const exercises = [
   {
     id: 4,
     name: "Escaneo Corporal",
-    image: "🧘",
+    image: "https://placehold.net/default.png",
     time: 15,
     description: "Meditación guiada para conciencia de tu cuerpo",
     category: "Meditación",
