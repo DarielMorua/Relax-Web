@@ -50,7 +50,7 @@ const ExerciseDetail = () => {
             <div className="flex items-start gap-4">
               {/* Icono */}
               <div className="w-16 h-16 bg-cyan-100 rounded-full flex items-center justify-center flex-shrink-0">
-                <span className="text-3xl">{exercise.image}</span>
+                <img className="w-20 h-20 rounded-full" src={exercise.image} alt={exercise.name} />
               </div>
 
               {/* Info */}
