@@ -4,8 +4,10 @@ import Layout from "./components/Layout.jsx";
 import ProtectedRoute from "./Auth/ProtectedRoute";
 import Home from "./pages/Home.jsx";
 import Login from "./pages/Login.jsx";
+import Calendario from "./pages/Calendario.jsx";
 import Exercises from "./pages/Exercises.jsx";
 import ExerciseDetail from "./components/ExerciseDetail.jsx";
+
 function App() {
   return (
     <AuthProvider>
@@ -26,7 +28,7 @@ function App() {
         />
 
         {/* Más rutas protegidas */}
-        {/* <Route
+          <Route
           path="/calendario"
           element={
             <ProtectedRoute>

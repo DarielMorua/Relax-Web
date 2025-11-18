@@ -47,6 +47,143 @@
   background-color: #C3DAEA;
 }
 
+.card-calendario {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  margin: 10px 100px 100px 0;
+  max-width: 1000px;
+  min-height: 600px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #F2F2F2;
+}
+
+.card-calendario-emoji {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0;
+  max-width: 900px;
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #CBD8FA;
+}
+
+.card-resumen {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0;
+  max-width: 400px;
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #F2F2F2;
+}
+
+.card-resumen-emocion {
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #CBD8FA;
+}
+
+.titulo-resumen {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+
+.emoji-resumen {
+  font-size: 2rem;
+}
+
+.porcentaje-resumen {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2d3748;
+}
+
+.titulo-calendario-emocion {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  margin: 0;
+}
+
+.card-emoji-hora {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.emoji-hora {
+  font-size: 2rem;
+}
+
+.hora-texto {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.titulo-calendario h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.titulo-calendario h2 {
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+.calendario-container {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.titulo-calendario-card h1 {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  text-align: left;
+}
+
 .card-recomendados {
   border: 1px solid transparent;
   border-radius: 10px;
