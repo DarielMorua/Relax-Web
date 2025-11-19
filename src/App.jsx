@@ -7,6 +7,7 @@ import Login from "./pages/Login.jsx";
 import Calendario from "./pages/Calendario.jsx";
 import Exercises from "./pages/Exercises.jsx";
 import ExerciseDetail from "./components/ExerciseDetail.jsx";
+import Notificaciones from "./pages/Norificaciones.jsx";
 
 function App() {
   return (
@@ -51,6 +52,7 @@ function App() {
             </ProtectedRoute>
           }
         />
+        */}
         
         <Route
           path="/notificaciones"
@@ -61,7 +63,7 @@ function App() {
               </Layout>
             </ProtectedRoute>
           }
-        /> */}
+        /> 
 
         {/* Ejercicios */}
         <Route

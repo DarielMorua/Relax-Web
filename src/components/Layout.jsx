@@ -2,13 +2,14 @@ import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import { Home, Calendar, Activity, MessageCircle, Bell } from "lucide-react";
 import { useAuth } from "./AuthContext";
+import Footer from "./Footer";
 const Layout = ({ children }) => {
   const navigation = [
     { name: "Inicio", path: "/", icon: Home },
     { name: "Calendario", path: "/calendario", icon: Calendar },
     { name: "Ejercicios", path: "/ejercicios", icon: Activity },
     // { name: "Chat con Doctores", path: "/chat", icon: MessageCircle },
-    // { name: "Notificaciones", path: "/notificaciones", icon: Bell },
+    { name: "Notificaciones", path: "/notificaciones", icon: Bell },
   ];
 
   const { user, logout } = useAuth();
@@ -95,6 +96,7 @@ const Layout = ({ children }) => {
       {/* Main Content */}
       <main className="flex-1 overflow-y-auto bg-gray-50">
         <div className="p-8">{children}</div>
+        <Footer />
       </main>
     </div>
   );
