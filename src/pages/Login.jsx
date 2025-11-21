@@ -53,7 +53,7 @@ function Login() {
             </h2>
             <p className="text-gray-400 text-sm">
               ¿No tienes una cuenta?{" "}
-              <a href="#" className="text-blue-500 hover:underline">
+              <a href="/signup" className="text-blue-500 hover:underline">
                 Regístrate
               </a>
               .
@@ -148,12 +148,14 @@ function Login() {
             alt="RelaxApp"
             className="w-full max-w-md mx-auto mb-8 drop-shadow-2xl"
           />
-          <h2 className="text-3xl font-bold text-[#1a5f61] mb-4">
-            Tu bienestar mental en un solo lugar
+          <h2 className="text-3xl font-bold text-[#1a5f61] mb-6">
+            Tu salud mental sin límites
           </h2>
-          <p className="text-[#2d7a7c] text-lg">
-            Accede a ejercicios de relajación, meditación y herramientas para
-            mejorar tu salud mental.
+          <p className="text-[#2d7a7c] text-lg leading-relaxed">
+            Conéctate con psicólogos y psiquiatras de forma remota o presencial,
+            accede a ejercicios de relajación y bienestar personalizados, y
+            registra tus emociones en un calendario interactivo para dar
+            seguimiento a tu progreso. Todo en un solo lugar.
           </p>
         </div>
       </div>
