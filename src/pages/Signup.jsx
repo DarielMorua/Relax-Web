@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../components/AuthContext";
-import logo from "../assets/relax highsvg.svg";
+import logo from "../assets/relax.svg";
 import bgImage from "../assets/RelaxedEnergy.svg";
 
 function Signup() {

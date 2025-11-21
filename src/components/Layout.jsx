@@ -3,7 +3,7 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { Home, Calendar, Activity, MessageCircle, Bell } from "lucide-react";
 import { useAuth } from "./AuthContext";
 import Footer from "./Footer";
-import logo from "../assets/relax ico.svg";
+import logo from "../assets/relax.svg";
 const Layout = ({ children }) => {
   const navigation = [
     { name: "Inicio", path: "/", icon: Home },
@@ -27,10 +27,13 @@ const Layout = ({ children }) => {
       <aside className="w-64 bg-white border-r border-gray-200 flex flex-col">
         {/* Logo */}
         <div className="px-6 pt-6 pb-1 border-b border-gray-100">
-          <NavLink to="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <img src={logo} alt="RelaxApp Logo" className="w-20 h-20 mt-5 mr-1" />
+          <NavLink
+            to="/"
+            className="flex items-center hover:opacity-80 transition-opacity"
+          >
+            <img src={logo} alt="RelaxApp Logo" className="w-15 h-20" />
             <div className="flex flex-col justify-center">
-              <h1 className="text-lg font-bold text-gray-900">RelaxApp</h1>
+              <h1 className="text-xl font-bold text-gray-900">RelaxApp</h1>
               <p className="text-xs text-gray-500">Tu bienestar mental</p>
             </div>
           </NavLink>

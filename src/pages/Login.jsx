@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useAuth } from "../components/AuthContext";
-import logo from "../assets/relax highsvg.svg";
+import logo from "../assets/relax.svg";
 import bgImage from "../assets/RelaxedEnergy.svg";
 //import bgImage from "../assets/patricio.jpeg";
 
@@ -87,7 +87,7 @@ function Login() {
                 htmlFor="password"
                 className="block text-sm font-medium text-gray-300 mb-2"
               >
-                Password
+                Constraseña
               </label>
               <input
                 type="password"
@@ -114,11 +114,11 @@ function Login() {
                   htmlFor="remember"
                   className="ml-2 text-sm text-gray-300"
                 >
-                  Remember me
+                  Recuérdame
                 </label>
               </div>
               <a href="#" className="text-sm text-blue-500 hover:underline">
-                Forgot password?
+                ¿Olvidaste tu contraseña?
               </a>
             </div>
 
@@ -134,7 +134,7 @@ function Login() {
               type="submit"
               className="w-full px-4 py-3 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-lg transition focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-gray-800"
             >
-              Sign in to your account
+              Iniciar sesión
             </button>
           </form>
         </div>
