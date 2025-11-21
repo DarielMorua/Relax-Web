@@ -7,7 +7,7 @@ import Login from "./pages/Login.jsx";
 import Calendario from "./pages/Calendario.jsx";
 import Exercises from "./pages/Exercises.jsx";
 import ExerciseDetail from "./components/ExerciseDetail.jsx";
-import Notificaciones from "./pages/Norificaciones.jsx";
+import Notificaciones from "./pages/Notificaciones.jsx";
 
 function App() {
   return (
