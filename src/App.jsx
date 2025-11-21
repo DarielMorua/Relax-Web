@@ -7,6 +7,7 @@ import Login from "./pages/Login.jsx";
 import Calendario from "./pages/Calendario.jsx";
 import Exercises from "./pages/Exercises.jsx";
 import ExerciseDetail from "./components/ExerciseDetail.jsx";
+import Chat from "./components/Chat.jsx";
 import Notificaciones from "./pages/Notificaciones.jsx";
 
 function App() {
@@ -29,7 +30,7 @@ function App() {
         />
 
         {/* Más rutas protegidas */}
-          <Route
+        <Route
           path="/calendario"
           element={
             <ProtectedRoute>
@@ -39,9 +40,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        
-       
-      {/*
+
         <Route
           path="/chat"
           element={
@@ -52,8 +51,7 @@ function App() {
             </ProtectedRoute>
           }
         />
-        */}
-        
+
         <Route
           path="/notificaciones"
           element={
@@ -63,7 +61,7 @@ function App() {
               </Layout>
             </ProtectedRoute>
           }
-        /> 
+        />
 
         {/* Ejercicios */}
         <Route
