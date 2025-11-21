@@ -52,9 +52,9 @@
 }
 
 .card-calendario {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(26, 95, 97, 0.15);
   padding: 30px;
   margin: 10px 100px 100px 0;
   max-width: 1000px;
@@ -66,13 +66,14 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  background-color: #F2F2F2;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+  backdrop-filter: blur(10px);
 }
 
 .card-calendario-emoji {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: 12px;
+  box-shadow: 0 6px 24px rgba(26, 95, 97, 0.2);
   padding: 20px;
   margin: 0;
   max-width: 900px;
@@ -81,13 +82,20 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #CBD8FA;
+  background: linear-gradient(135deg, rgba(203, 216, 250, 0.95) 0%, rgba(164, 201, 212, 0.9) 100%);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-calendario-emoji:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(26, 95, 97, 0.25);
 }
 
 .card-resumen {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(26, 95, 97, 0.15);
   padding: 20px;
   margin: 0;
   max-width: 400px;
@@ -96,13 +104,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #F2F2F2;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+  backdrop-filter: blur(10px);
 }
 
 .card-resumen-emocion {
-  border: 1px solid transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 10px;
-  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgba(26, 95, 97, 0.15);
   padding: 15px 20px;
   margin: 10px 0;
   width: 100%;
@@ -110,7 +119,14 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #CBD8FA;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(240, 248, 255, 0.9) 100%);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-resumen-emocion:hover {
+  transform: translateX(5px);
+  box-shadow: 0 6px 20px rgba(26, 95, 97, 0.2);
 }
 
 .titulo-resumen {

@@ -29,9 +29,9 @@ const Layout = ({ children }) => {
         <div className="px-6 pt-6 pb-1 border-b border-gray-100">
           <NavLink
             to="/"
-            className="flex items-center hover:opacity-80 transition-opacity"
+            className="flex items-center hover:opacity-80 transition-opacity mb-2"
           >
-            <img src={logo} alt="RelaxApp Logo" className="w-15 h-20" />
+            <img src={logo} alt="RelaxApp Logo" className="w-14 h-14 mr-2" />
             <div className="flex flex-col justify-center">
               <h1 className="text-xl font-bold text-gray-900">RelaxApp</h1>
               <p className="text-xs text-gray-500">Tu bienestar mental</p>
