@@ -26,7 +26,7 @@ const Layout = ({ children }) => {
       {/* Sidebar */}
       <aside className="w-64 bg-white border-r border-gray-200 flex flex-col">
         {/* Logo */}
-        <div className="p-6 border-b border-gray-100">
+        <div className="px-6 pt-6 pb-1 border-b border-gray-100">
           <NavLink to="/" className="flex items-center hover:opacity-80 transition-opacity">
             <img src={logo} alt="RelaxApp Logo" className="w-20 h-20 mt-5 mr-1" />
             <div className="flex flex-col justify-center">
@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
         </div>
 
         {/* Navegacion */}
-        <nav className="flex-1 px-4 py-6">
+        <nav className="flex-1 px-4 py-2">
           <p className="px-3 mb-2 text-xs font-semibold text-gray-400 uppercase tracking-wider">
             Navegación
           </p>
