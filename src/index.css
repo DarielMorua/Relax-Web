@@ -8,8 +8,10 @@
   }
 
   body {
-    @apply bg-gray-50 text-gray-900;
+    background: linear-gradient(135deg, #d9eced 0%, #b8d8e0 50%, #a4c9d4 100%);
+    @apply text-gray-900;
     font-feature-settings: "rlig" 1, "calt" 1;
+    min-height: 100vh;
   }
 
   html {
@@ -18,9 +20,9 @@
 }
 
 .card{
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(26, 95, 97, 0.15);
   padding: 20px;
   margin: 10px 100px 100px 0;
   max-width: 1500px;
@@ -29,13 +31,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #F2F2F2;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+  backdrop-filter: blur(10px);
 }
 
 .card-ayuda{
-  border: 1px solid transparent;
-  border-radius: 30px;
-  box-shadow: 1px 1px 5px #C3DAEA;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(26, 95, 97, 0.2);
   padding: 20px;
   margin: 10px 100px 100px 0;
   max-width: 1500px;
@@ -44,7 +47,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #C3DAEA;
+  background: linear-gradient(135deg, rgba(195, 218, 234, 0.9) 0%, rgba(164, 201, 212, 0.85) 100%);
+  backdrop-filter: blur(10px);
 }
 
 .card-calendario {
@@ -185,9 +189,9 @@
 }
 
 .card-recomendados {
-  border: 1px solid transparent;
-  border-radius: 10px;
-  box-shadow: 10px 10px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  box-shadow: 0 8px 32px rgba(26, 95, 97, 0.15);
   padding: 20px;
   margin: 10px 100px 100px 0;
   max-width: 400px;
@@ -196,7 +200,14 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: #F2F2F2;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.85) 100%);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-recomendados:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(26, 95, 97, 0.25);
 }
 
 .card-recomendados img {
@@ -220,6 +231,120 @@
   font-size: 14px;
   text-align: center;
   margin: 5px 0;
+}
+
+.notificaciones-container {
+  padding: 40px 60px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  max-width: 1200px;
+}
+
+.notificaciones-header {
+  margin-bottom: 30px;
+}
+
+.notificaciones-header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #000;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0;
+  font-weight: 400;
+}
+
+.notificaciones-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.notification-card {
+  background-color: #E8EBED;
+  border-radius: 16px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.notification-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+.notification-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.notification-text {
+  flex: 1;
+}
+
+.notification-text h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 5px 0;
+  color: #000;
+}
+
+.notification-text p {
+  font-size: 1rem;
+  margin: 0;
+  color: #333;
+  font-weight: 400;
+}
+
+.notification-time {
+  font-size: 1rem;
+  color: #666;
+  white-space: nowrap;
+  margin-left: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .notificaciones-container {
+    padding: 20px;
+  }
+
+  .notificaciones-header h1 {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .notification-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .notification-time {
+    margin-left: 70px;
+    align-self: flex-end;
+  }
 }
 
 .header-recomendados {
@@ -278,15 +403,22 @@
 
 /* Emoji Card Styles */
 .emoji-card {
-  background-color: #C3DAEA;
-  border: 2px solid #C3DAEA;
+  background: linear-gradient(135deg, rgba(195, 218, 234, 0.95) 0%, rgba(164, 201, 212, 0.9) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.4);
   border-radius: 12px;
   padding: 15px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 6px 24px rgba(26, 95, 97, 0.2);
   text-align: center;
   min-width: 150px;
   max-width: 200px;
   flex: 1;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.emoji-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(26, 95, 97, 0.3);
 }
 
 .emoji-card-sad {
