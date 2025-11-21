@@ -8,14 +8,19 @@ import Calendario from "./pages/Calendario.jsx";
 import Exercises from "./pages/Exercises.jsx";
 import ExerciseDetail from "./components/ExerciseDetail.jsx";
 import Chat from "./components/Chat.jsx";
+
+import Signup from "./pages/Signup.jsx";
+
 import Notificaciones from "./pages/Notificaciones.jsx";
+
 
 function App() {
   return (
     <AuthProvider>
       <Routes>
-        {/* Ruta pública */}
+        {/* Rutas públicas */}
         <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
 
         {/* Rutas protegidas */}
         <Route
